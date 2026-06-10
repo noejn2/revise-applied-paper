@@ -3,6 +3,11 @@
 A [Claude Code](https://claude.com/claude-code) skill that referees and revises an applied
 economics paper (`.qmd`, `.md`, or `.tex`) against Marc F. Bellemare's
 *[How to Write Applied Papers in Economics](http://marcfbellemare.com/wordpress/)* (2020).
+Think of it as an **AI paper referee**: it acts like an automated journal reviewer, producing a
+referee report and then revising the manuscript against that feedback.
+
+> 📄 For a longer write-up — the motivation, the workflow stage by stage, and notes on cost —
+> see the [project description page](https://noejn2.github.io/project-descriptions/revise-applied-paper).
 
 > [!IMPORTANT]
 > **This is a writing-craft tool, not scientific peer review.** It helps the *practitioner*
@@ -61,6 +66,19 @@ referee/
 
 It also triggers automatically when you ask things like *"review my introduction"* or *"check
 this draft against applied-econ norms."*
+
+## Performance & cost
+
+The skill is **token-intensive**: each round dispatches a fresh referee that re-reads the
+manuscript, the checklist, and the style sweeps, and an autonomous loop repeats that across
+agentic turns. A few rules of thumb to keep runs cheap without losing the value:
+
+- **`--loop 1` or `--loop 2` captures most of the benefit.** The first round surfaces the
+  structural comments that matter; later rounds mostly verify fixes and yield diminishing returns.
+- **Shorter manuscripts cost less per round** — run it on a section (an introduction, a data
+  section) when you don't need a full-paper pass.
+- **Autonomous runs are cheaper than mid-session interruptions** — kicking off `--loop N` on a
+  clean manuscript avoids re-reading a long conversation transcript on every turn.
 
 ## Example — a real run
 
