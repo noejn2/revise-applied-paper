@@ -1,10 +1,14 @@
 # revise-applied-paper
 
 A [Claude Code](https://claude.com/claude-code) skill that referees and revises an applied
-economics paper (`.qmd`, `.md`, or `.tex`) against Marc F. Bellemare's
-*[How to Write Applied Papers in Economics](http://marcfbellemare.com/wordpress/)* (2020).
+economics paper (`.qmd`, `.md`, or `.tex`) against the writing standards in Marc F. Bellemare's
+*[Doing Economics](https://mitpress.mit.edu/9780262543552/doing-economics/)* (MIT Press, 2022).
 Think of it as an **AI paper referee**: it acts like an automated journal reviewer, producing a
 referee report and then revising the manuscript against that feedback.
+
+**What sets it apart from other AI writing tools:** its standard of reference. Instead of
+improvising what "good academic writing" means, every comment is anchored to a published, widely
+cited authority in applied economics — Bellemare's book — not to a model's private taste.
 
 > 📄 For a longer write-up — the motivation, the workflow stage by stage, and notes on cost —
 > see the [project description page](https://noejn2.github.io/project-descriptions/revise-applied-paper).
@@ -25,8 +29,32 @@ referee report and then revising the manuscript against that feedback.
 
 Applied papers get rejected for avoidable writing reasons — a buried research question, a thin
 data section, an introduction that overpromises, tables a reader can't reconstruct. Bellemare
-(2020) wrote down the unspoken norms that prevent this. This skill turns those norms into a
-repeatable check on your own draft, structured as a journal R&R.
+wrote down the unspoken norms that prevent this in *Doing Economics*. This skill turns those norms
+into a repeatable check on your own draft, structured as a journal R&R.
+
+## How it compares
+
+Plenty of AI tools will critique your writing. The difference here is the **standard of reference**
+above: this skill audits your draft against a published, widely cited book on how applied
+economists actually write, so its comments trace back to an authority you can cite — not to a
+model's improvised opinion. The rest of the trade-off against hosted, paid reviewers looks like
+this:
+
+![How revise-applied-paper compares to hosted AI reviewers](assets/venn.png)
+
+Both approaches overlap on the basics — AI-powered review, writing and clarity checks, citation
+gaps, pre-submission feedback. They diverge on everything else:
+
+- **revise-applied-paper** (*open · free · yours*) is anchored to that citable authority, runs
+  locally so your unpublished draft never leaves your machine, costs $0 on top of Claude, is open
+  to fork and adapt, teaches as it reviews, and stays interactive — you push back on any comment
+  and iterate live, on a whole draft or section by section, at your own pace.
+- **Hosted alternatives** (*paid · hosted · deep compute*) trade those for raw horsepower: hours
+  of compute, whole-argument stress tests, deep proof-chasing, and a polished, shareable report
+  with no setup — at the cost of uploading your unpublished work to someone else's servers.
+
+In short: reach for a hosted reviewer when you want a heavyweight, one-shot stress test; reach for
+this when you want an everyday, private, authority-grounded craft check you control.
 
 ## How it works
 
@@ -34,7 +62,7 @@ Three steps, simulating a round of review:
 
 1. **Cold review** — a fresh subagent reads your manuscript *without* your conversation context
    (like a real referee who didn't watch you write it) and audits it against an ~80-item
-   checklist distilled from Bellemare (2020).
+   checklist distilled from Bellemare's *Doing Economics*.
 2. **Referee report** — the findings are written up as a referee report — a summary of the paper,
    numbered **major** comments (structure, data provenance, bait-and-switch, overclaiming) and
    **minor** comments (tense, notation, tables, abstract polish) — and saved next to your paper.
@@ -155,10 +183,10 @@ revise-applied-paper/
 
 ## Credit
 
-All of the substance here is Marc F. Bellemare's. The checklist is a distillation of his
-*How to Write Applied Papers in Economics* (September 2020), a chapter from his book
-*Doing Economics* (MIT Press). For the real thing, read the
-[original paper](http://marcfbellemare.com/wordpress/) and his
+All of the substance here is Marc F. Bellemare's. The checklist distills the chapter on writing
+applied papers from his book
+*[Doing Economics](https://mitpress.mit.edu/9780262543552/doing-economics/)* (MIT Press, 2022).
+For the real thing, read the book and his
 [blog](http://marcfbellemare.com/wordpress/) on academic writing — and Keith Head's
 [Introduction Formula](https://blogs.ubc.ca/khead/research/research-advice/formula), which it
 relies on.
