@@ -10,6 +10,7 @@ Simulate a journal R&R: a **cold referee** reviews the paper against `references
 Supporting files (relative to this skill's directory):
 - `references/bellemare-checklist.md` — the distilled guidance; the referee must apply **every** item.
 - `references/bellemare-fulltext.txt` — full text of Bellemare (2020); consult only when the original wording is needed.
+- `references/uw-abstract-guide.md` — abstract-writing criteria from the UW–Madison Writing Center; applied alongside §8.3 of the checklist.
 - `assets/referee-report-template.md` — the report format; fill it exactly, never invent a different structure.
 - `assets/response-memo-template.md` — the response memo format.
 - `assets/BellemareHowToPaperSeptember2020.pdf` — source of record; do not read during reviews.

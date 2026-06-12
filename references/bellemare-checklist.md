@@ -130,6 +130,14 @@ The conclusion should contain, in order:
 - [ ] Drafted by keeping roughly the first sentences of the hook, research question, and value-added parts of the introduction, polished into one paragraph.
 - [ ] Intelligible to any smart, college-educated non-economist, except requisite terminology (RCT, diff-in-diff, RD). Do not confuse unintelligibility with rigor.
 
+**Additional criteria — UW–Madison Writing Center (see `references/uw-abstract-guide.md`):**
+- [ ] One paragraph, roughly 150–250 words (or the target journal's stated limit/structure).
+- [ ] Covers, in order: context/topic, research question, rationale/value-added, methods & data, main findings, significance. (What's-already-known may be implied.) Missing findings or a missing question is a defect, not a style choice.
+- [ ] Intelligible standalone — a reader gets the gist without opening the paper.
+- [ ] No citations in the abstract.
+- [ ] Tense: present for current interpretations, methods, and findings; past for previous research (consistent with the present-tense norm in §10).
+- [ ] Contains the key search terms a target reader would query — abstracts and titles drive indexing and discoverability.
+
 ## 9. Literature review and background sections (§9)
 
 - [ ] **No standalone literature-review section** in a journal article (theses/dissertations excepted) — the mini-review in the introduction's antecedents does that job.

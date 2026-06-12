@@ -174,7 +174,8 @@ revise-applied-paper/
 ├── SKILL.md                       # the skill: workflow + interactive/loop modes
 ├── references/
 │   ├── bellemare-checklist.md     # the ~80-item audit, distilled from the paper
-│   └── bellemare-fulltext.txt     # full text, for when original wording is needed
+│   ├── bellemare-fulltext.txt     # full text, for when original wording is needed
+│   └── uw-abstract-guide.md       # abstract criteria from the UW–Madison Writing Center
 └── assets/
     ├── referee-report-template.md # fixed report format
     ├── response-memo-template.md  # fixed memo format
@@ -189,4 +190,6 @@ applied papers from his book
 For the real thing, read the book and his
 [blog](http://marcfbellemare.com/wordpress/) on academic writing — and Keith Head's
 [Introduction Formula](https://blogs.ubc.ca/khead/research/research-advice/formula), which it
-relies on.
+relies on. The abstract criteria in `references/uw-abstract-guide.md` are distilled from the
+University of Wisconsin–Madison Writing Center's
+[Writing an Abstract for Your Research Paper](https://writing.wisc.edu/handbook/assignments/writing-an-abstract-for-your-research-paper/).
